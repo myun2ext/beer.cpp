@@ -4,7 +4,7 @@
 #include "beer.h"
 
 struct beer_factory {
-	beer brew(){ return beer(); }
+	beer* brew() const { return new beer(); }
 };
 
 #endif//__MYUN2__BEER_FACTORY_HPP__
